@@ -18,8 +18,10 @@ MonoBehaviour:
   m_PlatformId: b9b35072a6f44c2e863f17467ea3dc13
   m_PlatformBuildProfile:
     rid: 8055963881526263875
-  m_OverrideGlobalSceneList: 0
-  m_Scenes: []
+  m_OverrideGlobalSceneList: 1
+  m_Scenes:
+  - m_enabled: 1
+    m_path: Assets/Scenes/SampleScene.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings:
@@ -34,13 +36,12 @@ MonoBehaviour:
     - line: '|   targetDevice: 2'
     - line: '|   useOnDemandResources: 0'
     - line: '|   accelerometerFrequency: 60'
-    - line: '|   companyName: LemmingVR, dev, baggZ'
-    - line: '|   productName: GorillaLocoPlusPlus'
+    - line: '|   companyName: GorillaPlus'
+    - line: '|   productName: GorillaPlusTest'
     - line: '|   defaultCursor: {instanceID: 0}'
     - line: '|   cursorHotspot: {x: 0, y: 0}'
-    - line: '|   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b:
-        0.1254902, a: 1}'
-    - line: '|   m_ShowUnitySplashScreen: 1'
+    - line: '|   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}'
+    - line: '|   m_ShowUnitySplashScreen: 0'
     - line: '|   m_ShowUnitySplashLogo: 1'
     - line: '|   m_SplashScreenOverlayOpacity: 1'
     - line: '|   m_SplashScreenAnimation: 1'
@@ -165,12 +166,8 @@ MonoBehaviour:
     - line: '|   loadStoreDebugModeEnabled: 0'
     - line: '|   visionOSBundleVersion: 1.0'
     - line: '|   tvOSBundleVersion: 1.0'
-    - line: '|   bundleVersion: 0.3'
-    - line: '|   preloadedAssets:'
-    - line: '|   - {fileID: -9213554549280140630, guid: 579d093924095cb44a138ce854e209af,
-        type: 2}'
-    - line: '|   - {fileID: 261257204458040574, guid: 96f505df5ad356841bba162bb3fa0227,
-        type: 2}'
+    - line: '|   bundleVersion: 0.5'
+    - line: '|   preloadedAssets: []'
     - line: '|   metroInputSource: 0'
     - line: '|   wsaTransparentSwapchain: 0'
     - line: '|   m_HolographicPauseOnTrackingLoss: 1'
@@ -192,7 +189,7 @@ MonoBehaviour:
     - line: '|   androidMaxAspectRatio: 2.1'
     - line: '|   androidMinAspectRatio: 1'
     - line: '|   applicationIdentifier:'
-    - line: '|     Android: com.LemmingVRdevbaggZ.GorillaLocoPlusPlus'
+    - line: '|     Android: com.GorillaPlus.GorillaPlusTest'
     - line: '|     Standalone: com.LemmingVR--dev.Project-Name'
     - line: '|   buildNumber:'
     - line: '|     Standalone: 0'
@@ -790,9 +787,25 @@ MonoBehaviour:
     - line: '|   webGLCloseOnQuit: 0'
     - line: '|   webWasm2023: 0'
     - line: '|   scriptingDefineSymbols:'
-    - line: '|     Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS'
-    - line: '|     Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS'
-    - line: '|     Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS'
+    - line: '|     Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;PHOTON_REALTIME_5_OR_NEWER;FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     EmbeddedLinux: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     GameCoreScarlett: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     GameCoreXboxOne: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     Kepler: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     LinuxHeadlessSimulation: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     Nintendo Switch: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     Nintendo Switch 2: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     PS4: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     PS5: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     QNX: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     Server: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     VisionOS: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     WebGL: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     XboxOne: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     iPhone: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
+    - line: '|     tvOS: FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_1;FUSION_2_1_3;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;FUSION_2_1_OR_NEWER;FUSION_LOGLEVEL_INFO'
     - line: '|   additionalCompilerArguments: {}'
     - line: '|   platformArchitecture: {}'
     - line: '|   scriptingBackend: {}'
@@ -815,7 +828,7 @@ MonoBehaviour:
     - line: '|     tvOS: 1'
     - line: '|   incrementalIl2cppBuild: {}'
     - line: '|   suppressCommonWarnings: 1'
-    - line: '|   allowUnsafeCode: 0'
+    - line: '|   allowUnsafeCode: 1'
     - line: '|   useDeterministicCompilation: 1'
     - line: '|   additionalIl2CppArgs: '
     - line: '|   scriptingRuntimeVersion: 1'
